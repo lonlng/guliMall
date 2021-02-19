@@ -20,9 +20,9 @@ import com.common.utils.R;
 /**
  * 属性分组
  *
- * @author expo7
- * @email expo7@gmail.com
- * @date 2021-02-19 13:44:48
+ * @author lonn
+ * @email lonlng@qq.com
+ * @date 2021-02-19 16:01:12
  */
 @RestController
 @RequestMapping("product/attrgroup")
