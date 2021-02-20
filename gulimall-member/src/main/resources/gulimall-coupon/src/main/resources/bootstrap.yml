@@ -1,0 +1,14 @@
+star:
+  nacos:
+    ip: localhost
+    port: 8848
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${star.nacos.ip}:${star.nacos.port}
+      config:
+        server-addr: ${star.nacos.ip}:${star.nacos.port}
+        file-extension: yml
+  application:
+    name: gulimall-coupon
