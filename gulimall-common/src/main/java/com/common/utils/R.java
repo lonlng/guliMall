@@ -59,7 +59,7 @@ public class R extends HashMap<String, Object> {
 
     public R put(String key, Object value) {
         super.put(key, value);
-        System.out.println(key + " " + value + " ");
+//        System.out.println(key + " " + value + " ");
         return this;
     }
 }
