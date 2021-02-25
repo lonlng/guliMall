@@ -1,0 +1,29 @@
+start:
+  nacos:
+    ip: localhost
+    port: 8848
+spring:
+  application:
+    name: renren-fast
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${start.nacos.ip}:${start.nacos.port}
+      config:
+        server-addr: ${start.nacos.ip}:${start.nacos.port}
+#        group: prod
+#        prefix: coupon
+        file-extension: yml
+#        namespace: fa6e3314-a804-4bca-bf58-66e289762bea
+#        extension-configs[0]:
+#          data-id: datasourse.yml
+#          group: dev
+#          refresh: true
+#        extension-configs[1]:
+#          data-id: mybatis.yml
+#          group: dev
+#          refresh: true
+#        extension-configs[2]:
+#          data-id: other.yml
+#          group: dev
+#          refresh: true
