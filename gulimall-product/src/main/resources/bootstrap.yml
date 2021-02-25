@@ -10,5 +10,6 @@ spring:
       config:
         server-addr: ${star.nacos.ip}:${star.nacos.port}
         file-extension: yml
+        namespace: 9cfb21c4-0b8f-4c5d-9586-935657d00f6e
   application:
     name: gulimall-product
