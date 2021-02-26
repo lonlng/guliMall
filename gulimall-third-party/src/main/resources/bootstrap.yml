@@ -1,0 +1,24 @@
+star:
+  nacos:
+    ip: localhost
+    port: 8848
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${star.nacos.ip}:${star.nacos.port}
+      config:
+        server-addr: ${star.nacos.ip}:${star.nacos.port}
+        file-extension: yml
+        namespace: 0b96386f-c747-4604-8a74-8e3dca3ebf5d
+        extension-configs[0]:
+          data-id: alibaba-cloud-oss.yml
+          group: dev
+          refresh: true
+        extension-configs[1]:
+          data-id: gulimall-third-party-application.yml
+
+          group: dev
+          refresh: true
+  application:
+    name: gulimall-third-party

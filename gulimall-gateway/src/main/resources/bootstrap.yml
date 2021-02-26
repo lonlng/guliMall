@@ -13,7 +13,7 @@ spring:
         server-addr: ${start.nacos.ip}:${start.nacos.port}
 #        group: prod
         file-extension: yml
-        namespace: gateway308a4cb1-f399-4ecd-9658-9c32e179fab6
+        namespace: 308a4cb1-f399-4ecd-9658-9c32e179fab6
 #        extension-configs[0]:
 #          data-id: datasourse.yml
 #          group: dev
